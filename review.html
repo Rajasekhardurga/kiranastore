@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reviews</title>
+    <style>
+    .testimonial-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .testimonial-card {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .testimonial-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .testimonial-card h4 {
+        color: #ff6347;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+</style>    
+</head>
+<body>
+    <section>
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"Great service and fresh products!"</p>
+                <h4>- Raja</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Best shop in the area. Highly recommended!"</p>
+                <h4>- Ramesh</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Good quality and reasonable prices!"</p>
+                <h4>- Manga</h4>
+            </div>
+        </div>
+    </section>
+    <button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆️</button>
+
+</body>
+</html>

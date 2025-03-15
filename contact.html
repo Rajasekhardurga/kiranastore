@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contact us</title>
+    <style>
+                section {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+.map-container {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📞 Phone: 9391964944</p>
+        <p>📍 Address: Anadapuram, vepada Road,kothapadu(m),anakapalli(dist) Andhra Pradesh</p>
+    <div class="image-container">
+        <img src="images/shop2.jpg" alt="Shop 2" />
+        <img src="images/shop1.jpg" alt="Shop 1" />
+        <img src="images/shop3.jpg" alt="Shop 3" />
+    </div>
+</section>
+<section>
+    <h2>Contact Us</h2>
+    <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="successMessage" style="display: none; color: green; font-weight: bold;">
+        ✅ Message sent successfully!
+    </p>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent page reload
+    
+            // Get form values
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+    
+            if (name && email && message) {
+                // Display success message
+                document.getElementById('successMessage').style.display = 'block';
+    
+                // Clear the form
+                document.getElementById('contactForm').reset();
+    
+                // Hide the message after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 3000);
+            } else {
+                alert("Please fill in all fields!");
+            }
+        }
+    </script>
+</section>
+<button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆️</button>
+<section>
+    <h2>Our Location</h2>
+    <div class="map-container">
+        <iframe  
+            src=https://maps.app.goo.gl/F599QZgF5TynXigs7
+            width="100%"  
+            height="300"  
+            style="border:0;"  
+            allowfullscreen=""  
+            loading="lazy">  
+        </iframe>
+    </div>
+</section>
+
+</body>
+</html>

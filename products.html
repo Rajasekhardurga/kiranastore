@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products</title>
+    <style>
+    .product-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .product-card {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 150px;
+        transition: transform 0.3s ease;
+    }
+    
+    .product-card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+    #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+</style>
+    
+</head>
+<body>
+    <section>
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="images/rice.jpg" alt="Rice">
+                <p>Rice - ₹50/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/sugar.jpg" alt="Sugar">
+                <p>Sugar - ₹44/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/oil.jpg" alt="Oil">
+                <p>Oil - ₹150/litre</p>
+            </div>
+            <div class="product-card">
+                <img src="images/maida.jpg" alt="Wheat">
+                <p>Maida - ₹45/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/Minapappu.jpg" alt="Wheat">
+                <p>Minapappu - ₹135/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/senaga pappu.jpg" alt="Wheat">
+                <p>senagapappu- ₹100/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/Frieddal.jpg" alt="Wheat">
+                <p>Frieddal- ₹100/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/paste.jpg" alt="Wheat">
+                <p>paste</p>
+            </div>
+            <div class="product-card">
+                <img src="images/Mysore sandal.jpg" alt="Wheat">
+                <p>Mysore sandal</p>
+            </div>
+            <div class="product-card">
+                <img src="images/Atta.jpg" alt="Wheat">
+                <p>Atta- ₹60/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/oil.jpg" alt="Wheat">
+                <p>senagapappu- ₹130/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/rin.jpg" alt="Wheat">
+                <p>rin</p>
+            </div>
+            <div class="product-card">
+                <img src="images/onion.jpg" alt="Wheat">
+                <p>onion- ₹40/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/tamoto.jpg" alt="Wheat">
+                <p>tamoto- ₹30/kg</p>
+            </div>
+            <div class="product-card">
+                <img src="images/Santoor.jpg" alt="Wheat">
+                <p>Santoor</p>
+            </div>
+            <div class="product-card">
+                <img src="images/paste.jpg" alt="Wheat">
+                <p>paste</p>
+            </div>
+            <div class="product-card">
+                <img src="images/snacks.jpg" alt="Wheat">
+                <p>Snacks</p>
+            </div>     
+            <div class="product-card">
+                <img src="images/pickles.jpg" alt="Wheat">
+                <p>pickles</p>
+            </div>
+            <div class="product-card">
+                <img src="images/sruf.jpg" alt="Wheat">
+                <p>sruf</p>
+            </div>  
+            <div class="product-card">
+                <img src="images/hairoil.jpg" alt="Wheat">
+                <p>hairoil</p>
+            </div>   
+                
+        </div>
+        <p>if u want any items can send your order throw whatsapp</p>
+        <a href="https://wa.me/919948526736" class="whatsapp-btn" target="_blank">  
+            <img src="images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon"> Chat with us on WhatsApp
+        </a>
+        
+    </section>
+    <button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆️</button>
+
+</body>
+</html>
